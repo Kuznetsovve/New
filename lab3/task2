@@ -14,20 +14,35 @@ pygame.init()
 FPS = 30
 screen = pygame.display.set_mode((794, 1123))
  
-color=(220, 220, 220)
+color=(230, 230, 230)
 
 rect(screen, (0, 255, 255), (0, 0, 794, 523))
 
 rect(screen, color, (0, 523, 794, 600))
 line(screen, (0, 0, 0), (0, 523), (794, 523), 1)
 
-circle(screen, (255, 255, 200), (200, 200), 100, 15)
+circle(screen, (161, 249, 228), (470, 200), 280, 25)
+
+ellipse(screen, color, (130, 430, 170, 510))
+ellipse(screen, (0, 0, 0), (130, 430, 170, 510), 1)
+
+ellipse(screen, color, (3, 490, 250, 450))
+ellipse(screen, (0, 0, 0), (3, 490, 250, 450), 1)
+
+ellipse(screen, color, (210, 600, 120, 40))
+ellipse(screen, (0, 0, 0), (210, 600, 120, 40), 1)
+
+ellipse(screen, color, (140, 820, 180, 130))
+ellipse(screen, (0, 0, 0), (140, 820, 180, 130), 1)
+
+ellipse(screen, color, (255, 935, 140, 45))
+ellipse(screen, (0, 0, 0), (255, 935, 140, 45), 1)
+
+ellipse(screen, (22, 80, 68), (475, 810, 300, 70))
+ellipse(screen, (0, 0, 0), (475, 810, 300, 70), 1)
 
 circle(screen, (255, 0, 0), (1170, 400), 50)
 circle(screen, (0, 0, 0), (1170, 400), 25)
-
-rect(screen, color,(820, 650, 280, 50))
-#polygon(screen, color, [(1100, 600), (1100, 650), (820, 600), (820, 650)])
 
 pygame.display.update()
 clock = pygame.time.Clock()
